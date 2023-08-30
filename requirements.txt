@@ -1,0 +1,7 @@
+sqlacodegen
+sqlalchemy
+pymysql
+pandas
+pydantic
+openpyxl
+rich
