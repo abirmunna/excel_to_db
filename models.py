@@ -8,7 +8,8 @@ metadata = Base.metadata
 class Test(Base):
     __tablename__ = 'test'
     id = Column(INTEGER(11), primary_key=True)
-    name = Column(VARCHAR(255))
+    first_name = Column(VARCHAR(255))
+    last_name = Column(VARCHAR(255))
     gender = Column(VARCHAR(255))
     phone = Column(VARCHAR(255))
     email = Column(VARCHAR(255))
