@@ -24,6 +24,8 @@ df = load_data_from_excel("data/test.xlsx")
 rprint(df.head())
 
 def pandas_df_to_db(df: pd.DataFrame, db: Session) -> None:
+    # delete all the data in the table
+    db.query(Test).delete()
     for index, data in df.iterrows():
         data = Test(first_name=data.FirstName,
                     last_name=data.LastName,

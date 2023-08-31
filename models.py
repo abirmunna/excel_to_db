@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Date, Index, String, TIMESTAMP, Table, text
+from sqlalchemy import Column, Date, Index, String, TIMESTAMP, Table, text, Integer
+from sqlalchemy.schema import Sequence
 from sqlalchemy.dialects.mysql import BIGINT, INTEGER, VARCHAR
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -7,9 +8,10 @@ metadata = Base.metadata
 
 class Test(Base):
     __tablename__ = 'test'
-    id = Column(INTEGER(11), primary_key=True)
-    first_name = Column(VARCHAR(255))
-    last_name = Column(VARCHAR(255))
-    gender = Column(VARCHAR(255))
-    phone = Column(VARCHAR(255))
-    email = Column(VARCHAR(255))
+    id_seq = Sequence("id_seq")
+    id = Column(Integer, id_seq, primary_key=True, server_default=id_seq.next_value())
+    first_name = Column(String(255))
+    last_name = Column(String(255))
+    gender = Column(String(255))
+    phone = Column(String(255))
+    email = Column(String(255))

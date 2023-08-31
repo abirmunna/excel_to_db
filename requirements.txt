@@ -1,6 +1,7 @@
 sqlacodegen
 sqlalchemy
 pymysql
+oracledb
 pandas
 pydantic
 openpyxl
