@@ -56,7 +56,7 @@ def insert_data_into_db(df: pd.DataFrame, db: Session, table_name: str) -> None:
 
     for _, row in df.iterrows():
         if db.query(table_class).filter(table_class.email == row.Email).first():
-            # rprint(f"Email '{row.Email}' already exists in the database.")
+            rprint(f"Email '{row.Email}' already exists in the database.")
             continue
         data = table_class(
             first_name=row.FirstName,
