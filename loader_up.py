@@ -36,8 +36,9 @@ def load_data():
     if file_path and table_name:
         try:
             df = pd.read_excel(file_path)
-            duplicate_emails = df[df.duplicated(subset=["Email"], keep=False)]
-            print(duplicate_emails)
+            # duplicate_emails = df[df.duplicated(subset=["Email"], keep=False)]
+            # print(duplicate_emails)
+            
             insert_data_into_db(df, db, table_name)
             result_label.config(text="Data loaded successfully.", fg="green")
         except Exception as e:
@@ -55,15 +56,13 @@ def insert_data_into_db(df: pd.DataFrame, db: Session, table_name: str) -> None:
         return
 
     for _, row in df.iterrows():
-        if db.query(table_class).filter(table_class.email == row.Email).first():
-            rprint(f"Email '{row.Email}' already exists in the database.")
+        if db.query(table_class).filter(table_class.SKU_Code == row.SKU_Code).first():
+            rprint(f"[red]Duplicate SKU_Code: {row.SKU_Code}[/red]")
             continue
         data = table_class(
-            first_name=row.FirstName,
-            last_name=row.LastName,
-            gender=row.Gender,
-            phone=row.Phone,
-            email=row.Email,
+            SKU_Code=row.SKU_Code,
+            LOT_No=row.LOT_No,
+            Serial_No=row.Serial_No,
         )
 
         db.add(data)

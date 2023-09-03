@@ -7,11 +7,9 @@ Base = declarative_base()
 metadata = Base.metadata
 
 
-class Test(Base):
-    __tablename__ = "test"
+class SKU_EXL(Base):
+    __tablename__ = "SKU_EXL"
     id = Column(Integer, Sequence("test_id_seq"), primary_key=True)
-    first_name = Column(String(255))
-    last_name = Column(String(255))
-    gender = Column(String(255))
-    phone = Column(String(255))
-    email = Column(String(255))
+    SKU_Code = Column(String(255))
+    LOT_No = Column(String(255))
+    Serial_No = Column(String(255))
