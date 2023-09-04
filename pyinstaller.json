@@ -1,0 +1,109 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/loader_up.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": false
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "ascii",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "embed_manifest",
+   "value": true
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "win_private_assemblies",
+   "value": false
+  },
+  {
+   "optionDest": "win_no_prefer_redirects",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/.gitignore;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/database.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/lsnr_stat.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/models.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/README.md;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/requirements.txt;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/test.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/data;data/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Administrator/OneDrive - Beacon Pharmaceuticals Limited/Desktop/excel_to_db/instantclient;instantclient/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}
