@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Data Loader"
-#define MyAppVersion "1.5.1"
+#define MyAppVersion "1.6.1"
 #define MyAppPublisher "Beacon Group"
 #define MyAppURL "beaconpharma.com.bd"
 #define MyAppExeName "loader_up.exe"
